@@ -152,7 +152,23 @@
         <div class="container center">
             <div class="about__wrapper">
                 <div class="about__photo"> 
-                    <img src="icons/about_me/Myphoto.svg" class="about__img" alt="myphoto">
+                    <!-- pour le telecharegement d'une img legere selon la taille de l'ecran -->
+                    <!-- <img srcset="img/myphoto-min.jpeg 300w,
+                                img/myphoto.jpeg 400w"
+                        sizes="(max-width: 576px) 280px,
+                              (min-width: 577px) 400px"
+                    src="img/myphoto.jpeg" class="about__img" alt="myphoto"> -->
+                    <!-- <picture>
+                        <source media="(max-width: 576px)" srcset="img/myphoto-min.jpeg">
+                        <source media="(min-width: 577px)" srcset="img/myphoto.jpeg">
+                        <img src="img/myphoto.jpeg" alt="myphoto">
+                    </picture> -->
+                    
+                    <!-- pour ajouter plusieurs formats d'imgs -->
+                    <picture>
+                        <source type="image/webp" srcset="img/myphoto.webp">
+                        <img src="img/myphoto.jpeg" alt="myphoto">
+                    </picture>
                 </div>
                
                
@@ -548,7 +564,7 @@
         <div class="container center">
             <div class="contacts__wrapper">
                 <div class="contacts__photo"> 
-                    <img src="icons/about_me/Myphoto.svg" class="about__img" alt="myphoto">
+                    <img src="img/myphoto.jpeg" class="about__img" alt="myphoto">
                 </div>
                 <div class="contacts__descr">
                     <h2 class="title title_fz16 contacts__title">Контакты</h2>
