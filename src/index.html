@@ -40,7 +40,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -95,12 +95,12 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__link"><a href="#променя">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#мойопыт">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#моинавыки">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#моиработы">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#прайслист">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link"><a href="#контакты">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
 
@@ -131,7 +131,7 @@
         </div>
         <div class="menu__overlay"></div>
     </div>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="hamburger">
             <span></span>
             <span class="long"></span>
@@ -143,12 +143,13 @@
                 из города Санкт-Петербург
             </h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn title_fz14">Портфолио</a>
-                <a href="#" class="promo__link btn btn_nobg title_fz14">Про меня</a>
+                <a href="#моиработы" class="promo__link btn title_fz14">Портфолио</a>
+                <a href="#променя" class="promo__link btn btn_nobg title_fz14">Про меня</a>
             </div>
         </div>
     </section>
-    <section class="about">
+    <section  id="променя" class="about" data-aos="fade-up"data-aos-delay="5s" data-aos-duration="2s"
+                data-aos-easing="ease-in-out" data-aos-offset="200">
         <div class="container center">
             <div class="about__wrapper">
                 <div class="about__photo"> 
@@ -219,7 +220,8 @@
         </div>
 
     </section>
-    <section class="resume">
+    <section id="мойопыт" class="resume" data-aos="fade-up"data-aos-delay="5s" data-aos-duration="2s"
+                data-aos-easing="ease-in-out" data-aos-offset="200">
         <div class="container center">
             <h2 class="title title_fz16 title__section-title">Опыт</h2>
             <div class="title title_fz36 title__section-subtitle">Чем я буду полезeн</div>
@@ -302,7 +304,8 @@
             </div>
         </div>
     </section>
-    <section class="proskills">
+    <section id="моинавыки" class="proskills" data-aos="fade-up"data-aos-delay="5s" data-aos-duration="2s"
+                data-aos-easing="ease-in-out" data-aos-offset="200">
         <div class="container center">
             <h2 class="title title_fz16 title__section-title">Навыки</h2>
             <div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
@@ -442,7 +445,8 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section  id="моиработы" class="portfolio" data-aos="fade-up"data-aos-delay="5s" data-aos-duration="2s"
+                data-aos-easing="ease-in-out" data-aos-offset="200">
         <div class="container center">
             <h2 class="title title_fz16 title__section-title">Портфолио</h2>
             <div class="title title_fz36 title__section-subtitle">Мои работы</div>
@@ -455,8 +459,8 @@
                 <a href="/Pulse" class="portfolio__item">
                     <img src="img/works/pulse.jpg" alt="pulse">
                 </a>
-                <a href="#" class="portfolio__item">
-                    <img src="img/works/bread.jpg" alt="bread">
+                <a href="/wordpress" class="portfolio__item">
+                    <img src="img/works/main_wordpress.jpg" alt="wordpress">
                 </a>
                 <a href="#" class="portfolio__item vertical">
                     <img src="img/works/plans.jpg" alt="plans">
@@ -471,7 +475,8 @@
         </div>
     </section>
 
-    <section class="listprice">
+    <section  id="прайслист" class="listprice" data-aos="fade-up"data-aos-delay="5s" data-aos-duration="2s"
+                data-aos-easing="ease-in-out" data-aos-offset="200">
         <div class="container center">
             <h2 class="title title_fz16 title__section-title">Портфолио</h2>
             <div class="divider"></div>
@@ -560,13 +565,14 @@
 
     </section>
 
-    <section class="contacts">
-        <div class="container center">
+    <section  id="контакты" class="contacts" data-aos="fade-up"data-aos-delay="5s" data-aos-duration="2s"
+                data-aos-easing="ease-in-out" data-aos-offset="200">
+        <div class="container center" >
             <div class="contacts__wrapper">
                 <div class="contacts__photo"> 
                     <img src="img/myphoto.jpeg" class="about__img" alt="myphoto">
                 </div>
-                <div class="contacts__descr">
+                <div  class="contacts__descr">
                     <h2 class="title title_fz16 contacts__title">Контакты</h2>
                     <div class="title title_fz36 contacts__subtitle">Свяжитесь со мной</div>
                     <div class="divider"></div>
@@ -590,7 +596,7 @@
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input required name="name" placeholder="Лунел" id="name" type="text">
+                            <input required name="name" minlength="2" placeholder="Лунел" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
@@ -617,6 +623,16 @@
         </div>
     </section>
 
+    <a href="#up" class="pageup">
+        <!-- <img src="icons/circlechevron-up.svg" alt="circlechevron-up"> -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#ffa501" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM377 271c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-87-87-87 87c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 167c9.4-9.4 24.6-9.4 33.9 0L377 271z"/></svg>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
