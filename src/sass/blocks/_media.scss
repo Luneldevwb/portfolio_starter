@@ -69,6 +69,9 @@
             margin: 0 10px;
         }
 	}
+    .pageup {
+        right: 20px;
+    }
 
 }
 
@@ -137,6 +140,7 @@
             line-height: 16px;
         }
 	}
+  
     
 }
 
@@ -222,6 +226,7 @@
        
 
 	}
+   
 }
 
 @media(max-width: 576px) {
@@ -345,6 +350,9 @@
             font-size: 16px;
             line-height: 18px;
         }
+    }
+    .pageup {
+        right: 10px;
     }
 
 }
