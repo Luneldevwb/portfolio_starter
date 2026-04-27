@@ -6,6 +6,7 @@
         grid-template: repeat(1, 280px) / repeat(2, 280px);
         // column-gap: 5px;
         gap: 50px;
+        justify-content: center;
 
         .vertical {
             grid-column: 4 / 5;
