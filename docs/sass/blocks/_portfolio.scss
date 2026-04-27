@@ -3,9 +3,10 @@
     &__wrapper {
         padding-top: 60px;
         display: grid;
-        grid-template: repeat(2, 280px) / repeat(4, 280px);
-        column-gap: 5px;
-        gap: 5px;
+        grid-template: repeat(1, 280px) / repeat(2, 280px);
+        // column-gap: 5px;
+        gap: 50px;
+
         .vertical {
             grid-column: 4 / 5;
             grid-row: 1 / 3;
