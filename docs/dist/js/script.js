@@ -61,13 +61,8 @@ AOS.init();
 //     return false;
 
 // });
-
 $('form').submit(function (e) {
     e.preventDefault();
-
-    if (!$(this).valid()) {
-        return;
-    }
 
     var form = $(this);
     $.ajax({
