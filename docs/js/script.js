@@ -41,23 +41,46 @@ $("a[href=#up]").click(function () {
 
 AOS.init();
 
+// $('form').submit(function (e) {
+//     e.preventDefault();
+
+//     if (!$(this).valid()) {
+//         return;
+//     }
+//     $.ajax({
+//         type: "POST",
+//         url: "https://formspree.io/f/xwvagodn",
+//         data: $(this).serialize()
+
+//     }).done(function () {
+//         $(this).find("input").val("");
+//         $('.contacts__descr').fadeOut();
+//         // $('.overlay, #thanks').fadeIn('slow');
+//         $('form').trigger('reset');
+//     });
+//     return false;
+
+// });
+
 $('form').submit(function (e) {
     e.preventDefault();
 
     if (!$(this).valid()) {
         return;
     }
+
+    var form = $(this);
     $.ajax({
         type: "POST",
-        url: "mailer/smart.php",
-        data: $(this).serialize()
-
+        url: "https://formspree.io/f/xwvagodn",
+        data: form.serialize(),
+        headers: {
+            "Accept": "application/json"
+        }
     }).done(function () {
-        $(this).find("input").val("");
-        $('.contacts__descr').fadeOut();
-        // $('.overlay, #thanks').fadeIn('slow');
-        $('form').trigger('reset');
+        form.trigger('reset');
+        alert('Message sent successfully!');
+    }).fail(function() {
+        alert('Oops! There was a problem sending your message.');
     });
-    return false;
-
 });
